@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+nav {
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    font-family: 'Varela Round', sans-serif;
+    justify-content: space-between;
+    padding: 12px 20px;
+    margin: -8px -8px 100px;
+}
+
+nav h1 {
+    font-size: 1.6rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    color: #333;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 0 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+ul>li>a:hover {
+    color: rgb(173, 156, 132);
+}
+
+main {
+    padding-bottom: 120px;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: -140px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer h4 {
+    padding: 20px;
+    padding-left: 80px;
+    margin: 0;
+}
+
+footer p {
+    margin: 20px;
+}
+
+footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+footer form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+footer input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+footer button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    color: #666;
+}
+
+section {
+    min-height: 100vh;
+    padding: 0 10%;
+}
+
+.home {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: -110px;
+    text-align: left;
+}
+
+.home-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.intro-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.intro-text h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.intro-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.intro-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.projects {
+    background-color: var(--bg-color);
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 460px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-container {
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    max-width: 400px;
+}
+
+.project-pic {
+    width: 100%;
+    height: auto;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.skills {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon-card {
+    background-color: #ffffff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 150px;  /* Set a fixed width */
+    height: 150px;  /* Set a fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.icon-card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.achievements {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: -160px;
+    
+}
+
+.achievements h2 {
+    font-size: 2.5rem;
+}
+
+.achievement-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.achievement-card {
+    margin: 10px;
+    max-width: 300px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.achievement-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-details {
+    padding: 10px;
+}
+
+.achievement-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    color: #333;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto;
+    padding: 60px 0;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+}
+
+.resume .position-relative {
+    max-width: 1000px; /* Adjust width as necessary */
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 180px;
+    padding-right: 180px;
+    background-color: #f8f9fa;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+}
+
+.resume h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #000; /* Text color */
+}
+
+.resume p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #666; /* Text color */
+}
+
+.resume .btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.resume .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.resume .btn-primary a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.resume .btn-primary a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 767px) {
+    .resume {
+        padding: 20px;
+    }
+    .resume .position-relative {
+        padding: 20px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    nav li {
+        padding: 10px 0;
+    }
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+    .img {
+        max-width: 100%;
+    }
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .achievements {
+        margin-top: -80px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    nav li {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    nav li {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    nav {
+        padding: 12px 20px;
+    }
+    nav li {
+        padding: 0 20px;
+    }
+}

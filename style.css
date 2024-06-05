@@ -230,11 +230,11 @@ section {
 }
 
 .skills {
-    max-width: 68.75rem;
+    max-width: 188.75rem;
     margin: auto;
     text-align: center;
     margin-top: 40px;
-    margin-bottom: 50px;
+    margin-bottom: -30px;
 }
 
 .skills-wrapper {
@@ -249,8 +249,8 @@ section {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 10px;
-    width: 150px;  /* Set a fixed width */
-    height: 150px;  /* Set a fixed height */
+    width: 170px;  /* Set a fixed width */
+    height: 170px;  /* Set a fixed height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -383,7 +383,8 @@ body {
 /* Adjustments for smaller screens */
 @media screen and (max-width: 767px) {
     .resume {
-        padding: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .resume .position-relative {
         padding: 20px;
@@ -438,4 +439,21 @@ body {
     nav li {
         padding: 0 20px;
     }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+nav, footer {
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }

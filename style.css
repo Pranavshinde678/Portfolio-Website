@@ -510,21 +510,21 @@ html {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Define the default button styles */
+
 .btn-primary {
-    background-color: #007bff; /* Default button color */
-    border-color: #007bff; /* Default button border color */
+    background-color: #007bff; 
+    border-color: #007bff; 
 }
 
-/* Define the hover styles for the button */
+
 .btn-primary:hover {
-    background-color: #0056b3; /* Color on hover */
-    border-color: #004085; /* Border color on hover */
+    background-color: #0056b3; 
+    border-color: #004085;
 }
 
 
 .social-links a:hover {
-    color: rgb(173, 156, 132); /* Color on hover */
+    color: rgb(173, 156, 132); 
 }
 
 form {
@@ -549,7 +549,7 @@ textarea {
     resize: vertical;
 }
 
-/* styles.css */
+
 input[type="email"] {
     font-family: 'Roboto', sans-serif;
 }

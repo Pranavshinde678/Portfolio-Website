@@ -18,5 +18,5 @@ The website is deployed on [Netlify](https://your-netlify-url.netlify.app), prov
 
 ## 🤝 Connect With Me
 
-Explore my projects and learn more about my work through my [website](https://yourwebsite.com). Feel free to reach out for collaborations, discussions, or just to connect. Together, let’s push the boundaries of what technology can achieve!
+Explore my projects and learn more about my work through my [website](https://pranavshinde.netlify.app/). Feel free to reach out for collaborations, discussions, or just to connect. Together, let’s push the boundaries of what technology can achieve!
 

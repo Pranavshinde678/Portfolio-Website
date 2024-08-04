@@ -3,11 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
 
 nav {
     background-color: black;
@@ -448,7 +443,7 @@ html, body {
 
 nav, footer {
     width: 100%;
-    box-sizing: border-box; /* Ensures padding is included in the width */
+    box-sizing: border-box; 
 }
 
 *, *::before, *::after {
@@ -460,22 +455,22 @@ nav, footer {
 
 @media only screen and (max-width: 600px) {
     .intro-text h1 {
-        font-size: 1.5rem; /* Adjust for smaller screens */
+        font-size: 1.5rem; 
         
     }
 
     .intro-text h2 {
-        font-size: 1.2rem; /* Adjust for smaller screens */
+        font-size: 1.2rem;
     }
 
     .intro-text p {
-        font-size: 0.9rem; /* Adjust for smaller screens */
-        margin: 0.5rem 0; /* Adjust spacing for smaller screens */
+        font-size: 0.9rem; 
+        margin: 0.5rem 0; 
         text-align: justify;
     }
 
     .intro-image img {
-        max-width: 80%; /* Adjust image size for mobile */
+        max-width: 80%; 
     }
     .projects p{
         text-align: justify;
@@ -484,15 +479,15 @@ nav, footer {
 
 
 .intro-image img {
-    width: 100%; /* Make image responsive */
-    max-width: 500px; /* Limit maximum width to 200px (adjust as needed) */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 1rem; /* Spacing between text and image */
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+    margin-top: 1rem; 
 }
 
 @media only screen and (max-width: 600px) {
     .achievements {
-        margin-top: -2rem /* Increase the top margin to create more space */
+        margin-top: -2rem 
     }
 }
 

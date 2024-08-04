@@ -468,13 +468,20 @@ nav, footer {
     .intro-text p {
         font-size: 0.9rem; 
         margin: 0.5rem 0; 
+        text-align: justify;
     }
 
     .intro-image img {
         max-width: 80%; 
     }
+    .projects p{
+        text-align: justify;
+    }
 }
 
+.projects p{
+        text-align: justify;
+}
 
 .intro-image img {
     width: 100%;

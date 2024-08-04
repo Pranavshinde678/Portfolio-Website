@@ -1,360 +1,563 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="style.css" rel="stylesheet">
-      <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
-      <title>Pranav Shinde Portfolio</title>
-  </head>
-  <body>
-      <header>
-      <nav>
-          <h1>Pranav Shinde</h1>
-          <ul>
-              
-              <li><a href="#home-section">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#achievements">Achievements</a></li>
-              <li><a href="mailto:pranavvvvshinde@gmail.com">Suggestions</a></li>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
 
-          </ul>
-      </nav>
-  </header>
-  <main>
-  <section class="home">
-        <div class="home-content" id="home-section">
-            <div class="intro-text ">
-                <h1>Hi there, I'm Pranav Shinde</h1>
-                <h2>Web Developer</h2>
-                <p>Greetings! I am an ardent Final year Computer Science Engineering student at Vellore Institute of Technology, Chennai, specializing in AI and Robotics. 
-                With a firm grasp of Java, Data Structures and Algorithms and Web development, I bring a professional approach to every project. 
-                Within this portfolio lies a carefully curated selection of my work, a testament to the seamless fusion of technology and design.
-                Each project represents a milestone in my professional journey, showcasing my unwavering commitment to excellence and continuous growth. 
-                As a relentless pursuer of excellence, I invite you to explore the intricacies of my coding landscape. 
-                Beyond the lines of code, this platform is a testament to my professional journey, where each project is a milestone in refining my skills. 
-                Welcome to a space where bugs transform into features and every challenge is an opportunity for growth. 
-                Let's connect and explore the limitless possibilities within the realm of technology and innovation!</p>
-            </div>
-            <div class="intro-image">
-                <img src="WhatsApp Image 2023-12-11 at 22.04.26_bfd2bdf4.jpg" alt="Pranav Shinde">
-            </div>
-      </div>
-  </section>
 
-  <section class="skills" id="skills">
-      <h2 class="skill-header">My Top Skills</h2>
+nav {
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    font-family: 'Varela Round', sans-serif;
+    justify-content: space-between;
+    padding: 12px 20px;
+    margin: -8px -8px 100px;
+}
 
-      <div class="skills-wrapper">
+nav h1 {
+    font-size: 1.6rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    color: #333;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 0 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+ul>li>a:hover {
+    color: rgb(173, 156, 132);
+}
+
+main {
+    padding-bottom: 120px;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: -140px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer h4 {
+    padding: 20px;
+    padding-left: 80px;
+    margin: 0;
+}
+
+footer p {
+    margin: 20px;
+}
+
+footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+footer form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+footer input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+footer button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    color: #666;
+}
+
+
+section {
+    padding: 20px 10%; 
+    margin: 0 auto;
+    padding: 2rem; 
+    margin-bottom: rem
+}
+
+
+.home {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.home-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.intro-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.intro-text h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.intro-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.intro-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.projects {
+    background-color: var(--bg-color);
+    padding: 20px 0; 
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-container {
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    max-width: 400px;
+}
+
+.project-pic {
+    width: 100%;
+    height: auto;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.skills {
+    max-width: 188.75rem;
+    margin: 0 auto;
+    padding: 40px 0; 
+    text-align: center;
+}
+
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon-card {
+    background-color: #ffffff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 170px;  
+    height: 170px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.icon-card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.achievements {
+    padding: 20px 0; 
+    text-align: center;
+}
+
+.achievements h2 {
+    font-size: 2.5rem;
+}
+
+.achievement-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.achievement-card {
+    margin: 10px;
+    max-width: 300px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.achievement-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-details {
+    padding: 10px;
+}
+
+.achievement-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    color: #333;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto;
+    padding: 60px 0;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+}
+
+.resume .position-relative {
+    max-width: 1000px; 
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 180px;
+    padding-right: 180px;
+    background-color: #f8f9fa;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+}
+
+.resume h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #000;
+}
+
+.resume p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #666; 
+}
+
+.resume .btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.resume .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.resume .btn-primary a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.resume .btn-primary a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 767px) {
+    .resume {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .resume .position-relative {
+        padding: 20px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    nav li {
+        padding: 10px 0;
+    }
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+    .img {
+        max-width: 100%;
+    }
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .achievements {
+        margin-top: -80px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    nav li {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    nav li {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    nav {
+        padding: 12px 20px;
+    }
+    nav li {
+        padding: 0 20px;
+    }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+nav, footer {
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.projects p{
+    text-align: justify;
+}   
+
+@media only screen and (max-width: 600px) {
+    .intro-text h1 {
+        font-size: 1.5rem; 
         
-        <div class="first-set animate__animated animate__pulse">
-          <div class="skill-container">
-          <img
-            src="./images/4672509.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-        <div class="skill-container">
-          <img
-            src="./images/free-html-58-225994.webp"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-        <div class="skill-container">
-          <img
-            src="./images/efe020c3-cfc2-41f9-be41-ad581ffc9969.jpeg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          </div>
-        </div>
-        
-        <div class="second-set animate__animated animate__pulse">
-          <div class="skill-container">
-          <img
-            src="./images/java-icon-images-6.jpg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-        <div class="skill-container">
-          <img
-            src="./images/dsa.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-        <div class="skill-container">
-          <img
-            src="./images/sql.webp"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-        </div>
-        
-        <div class="second-set animate__animated animate__pulse">
-          <div class="skill-container">
-          <img
-            src="./images/C++-Logo.wine.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-        <div class="skill-container">
-          <img
-            src="./images/C_Logo.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-        <div class="skill-container">
-          <img
-            src="./images/python.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-        </div>
-      </div>
-    </section>
-  <section class="projects" id="projects">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="images/mop.jpg"
-            alt="netflic-clone"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Mop Bot</h3>
-          <p class="project-details">
-            Worked as part of a team to design and develop an autonomous MopBot robot with integrated path planning and water dispensing mechanisms.
-          </p>
-          <a href="images/mopbot.mp4" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="images/e-validator.png"
-            alt="expense-tracker"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Email Validator</h3>
-          <p class="project-details">
-              Developed a robust Email Validator web application using HTML, CSS, and JavaScript to streamline email verification processes. This tool ensures the validity of email addresses entered by users, enhancing data accuracy and user experience.
-          </p>
-          <a href="https://pranavshinde678.github.io/e-validator/" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="images/spotify-clone.png"
-            alt="netflic-clone"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Spotify Clone</h3>
-          <p class="project-details">
-              Developed a feature-rich Spotify Clone, a music streaming web application that replicates the core functionalities of the popular Spotify platform. This project was created using a combination of HTML, CSS, and JavaScript for the frontend.
-          </p>
-          <a href="https://pranavshinde678.github.io/spotify-clone/" target="_blank" class="project-link">Check it Out</a>
-        </div>
+    }
 
-        <div class="project-container project-card">
-          <img
-            src="images/simon_game.png"
-            alt="greeny-earth"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Simon Game</h3>
-          <p class="project-details">
-              Created an engaging Simon Game web application, a digital version of the classic memory game "Simon" which involves memorization and playback.This project offers a fun and challenging experience for users to test their memory skills.
-          </p>
-          <a href="https://pranavshinde678.github.io/simon_game/" target="_blank" class="project-link">Check it Out</a>
-        </div>
+    .intro-text h2 {
+        font-size: 1.2rem;
+    }
 
-        <div class="project-container project-card">
-          <img
-            src="images/Screenshot 2024-08-04 185950.png"
-            alt="greeny-earth"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Cyber Security Assessment Application</h3>
-          <p class="project-details">
-            During my internship at Vakrangee Limited, I developed a Cyber Security Assessment App using HTML, CSS, JavaScript and Firebase. The app features 20 scenario-based questions, each worth one mark, and allows users to review their answers immediately after submission. Results, including scores and percentages, are stored in Firebase and can be viewed upon completing the quiz.
-          </p>
-          <a href="https://pranavshinde678.github.io/CyberSecurityAssessment" target="_blank" class="project-link">Check it Out</a>
-        </div>
+    .intro-text p {
+        font-size: 0.9rem; 
+        margin: 0.5rem 0; 
+        text-align: justify;
+    }
 
-      </div>
-    </section>
-  <br>
-  <br>
-
-  <section class="achievements" id="achievements">
-      <h2 class="achievements-title">My Achievements</h2>
-      <div class="achievement-container">
-        <div class="achievement-card">
-          <a href="https://www.credly.com/badges/a30b476b-c62a-48fa-923e-f9a3b0fbeb19/public_urlt" target="_blank">
-            <img src="./cert/aws.png" alt="AWS">
-          </a>
-          <div class="achievement-details">
-            <h3 class="achievement-title">AWS Certified:Cloud Practititoner:CLF-C02</h3>
-          
-          </div>
-        </div>
-        <div class="achievement-card">
-          <a href="https://drive.google.com/file/d/1-W4HSFHF5kn1pBfInaQbNdPucryyFXPd/view?usp=drivesdk" target="_blank">
-            <img src="./cert/azure.png" alt="AWS">
-          </a>
-          <div class="achievement-details">
-            <h3 class="achievement-title">Microsoft Certified:Azure Administrator Associate</h3>
-          
-          </div>
-        </div>
-        <div class="achievement-card">
-          <a href="https://drive.google.com/file/d/1sDHVwwa_iIBQrPobZTXUPo5Op3xV6tVy/view?usp=drivesdk" target="_blank">
-            <img src="./cert/resize-17034246531594606745nptel.png" alt="AWS">
-          </a>
-          <div class="achievement-details">
-            <h3 class="achievement-title">NPTEL:Training of Trainers - Gold Badge Holder(Top 1%) </h3>
-          
-          </div>
-        </div>
-        <div class="achievement-card">
-          <a href="https://scl.io/bnVWyvJ" target="_blank">
-            <img src="./cert//resize-1703425335293172262Screenshot20231224191157.png" alt="AWS">
-          </a>
-          <div class="achievement-details">
-            <h3 class="achievement-title">Enterprise Automation Certification</h3>
-          
-          </div>
-        </div>
-        <div class="achievement-card">
-          <a href="https://drive.google.com/file/d/1GG62IvkXP3ypL09kIwc_0rR1n7AXPCa-/view?usp=drivesdk" target="_blank">
-            <img src="./cert/resize-17034246351581127857java.png" alt="AWS">
-          </a>
-          <div class="achievement-details">
-            <h3 class="achievement-title">Java Certification-HackerRank</h3>
-          
-          </div>
-        </div>
-        <div class="achievement-card">
-          <a href="https://certificate.codingninjas.com/certificate/fe622070aaf8c8c8/YearlyStats" target="_blank">
-            <img src="./cert/resize-1703704689707568816Screenshot20231228004705.png" alt="AWS">
-          </a>
-          <div class="achievement-details">
-            <h3 class="achievement-title">Coding Ninjas Coding Recap'23 : Streak Maestro Badge Holder(Top 1%)</h3>
-          
-          </div>
-        </div>
-        <div class="achievement-card">
-          <a href="https://drive.google.com/file/d/1XxGkXj_hpgpmwSw4_ypJAAdHkGSlQLUZ/view?usp=drivesdk" target="_blank">
-            <img src="./cert/cpp.jpg" alt="AWS">
-          </a>
-          <div class="achievement-details">
-            <h3 class="achievement-title">Certification for completion of C++ Training</h3>
-          
-          </div>
-        </div>
-        <div class="achievement-card">
-          <a href="https://drive.google.com/file/d/1YBaz6UkErLncIH_z2OzL3bpPp7nxGbn8/view?usp=drivesdk" target="_blank">
-            <img src="./cert/advancedcpp.jpg" alt="AWS">
-          </a>
-          <div class="achievement-details">
-            <h3 class="achievement-title">Certification for completion of Advanced C++ Training</h3>
-          
-          </div>
-        </div>
-        <div class="achievement-card">
-          <a href="https://drive.google.com/file/d/1XxGrXtK4hYjy23yxCvTKsOMjRk0RDC7o/view?usp=drivesdk" target="_blank">
-            <img src="./cert/python.jpg" alt="AWS">
-          </a>
-          <div class="achievement-details">
-            <h3 class="achievement-title">Certification for completion of Python Training</h3>
-          
-          </div>
-        </div>
-        <div class="achievement-card">
-          <a href="https://drive.google.com/file/d/1Xz4zmOnQWJFDn0NufaAIyZ-Tw_7svEIf/view?usp=drivesdk" target="_blank">
-            <img src="./cert/c.jpg" alt="AWS">
-          </a>
-          <div class="achievement-details">
-            <h3 class="achievement-title">Certification for completion of C Training</h3>
-          
-          </div>
-        </div>
-        
-      
-              
-                                            
-      
-      </div>
-      
-      <section class="resume">
-        <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
-
-            <svg class="bi mb-3" width="48" height="48">
-                <use xlink:href="#check2-circle"></use>
-            </svg>
-            <h1 class="text-body-emphasis">Check out my Resume</h1>
-            <p class="col-lg-6 mx-auto mb-4">
-                Embark on my professional journey : Dive into my Resume
-            </p>
-            <button class="btn btn-primary px-5" type="button">
-                <a href="https://drive.google.com/drive/folders/1mVi7ZFd7jieN1Nd_nKqwuBi0gyEJunie?usp=sharing">My
-                    Resume</a>
-            </button>
-        </div>
-    </section>
-    
-    
-    <footer>
-      <form action="https://formspree.io/f/xanwovzb" method="post">
-        <h3>Connect</h3>
-        <label for="email">Email:</label>
-        <input id="email" name="email" type="email" placeholder="Enter your email" font-family: "Roboto" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Enter your message" rows="3" required></textarea>
-        <br>
-        <button type="submit">Send email</button>
-    </form>
-      <h4>Let's unite our ideas and craft something innovative together</h4>
-      <br>
-      <div class="social-links">
-        <a style="text-decoration: none;" href="https://github.com/Pranavshinde678">Github</a>
-        <a style="text-decoration: none;" href="https://www.linkedin.com/in/pranav-shinde-b24904267/">Linkedin</a>
-        <a style="text-decoration: none;" href="https://www.facebook.com/pranav.shinde.161214">Facebook</a>
-        <a style="text-decoration: none;"href="https://www.instagram.com/pranavvshinde">Instagram</a>
-        
-    </div>
-    
-
-      <p>&copy;Open Source - 2024 by Pranav Shinde</p>
-  </footer>
+    .intro-image img {
+        max-width: 80%; 
+    }
+    .projects p{
+        text-align: justify;
+    }
+}
 
 
-    
+.intro-image img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+    margin-top: 1rem; 
+}
+
+@media only screen and (max-width: 600px) {
+    .achievements {
+        margin-top: -2rem 
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.achievement-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.achievement-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.skill-container{
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.skill-container:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
 
 
-  </main>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
-  </body>
+.btn-primary {
+    background-color: #007bff; 
+    border-color: #007bff; 
+}
 
-  </html>
+
+.btn-primary:hover {
+    background-color: #0056b3; 
+    border-color: #004085;
+}
+
+
+.social-links a:hover {
+    color: rgb(173, 156, 132); 
+}
+
+form {
+    background: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea {
+    resize: vertical;
+}
+
+
+input[type="email"] {
+    font-family: 'Roboto', sans-serif;
+}
+
+textarea {
+    font-family: 'Roboto', sans-serif;
+}

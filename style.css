@@ -120,15 +120,15 @@ p {
     color: #666;
 }
 
-/* General section styling */
+
 section {
-    padding: 20px 10%; /* Adjust as needed */
+    padding: 20px 10%; 
     margin: 0 auto;
-    padding: 2rem; /* Consistent padding */
+    padding: 2rem; 
     margin-bottom: rem
 }
 
-/* Specific sections */
+
 .home {
     max-width: 1200px;
     margin: 0 auto;
@@ -178,7 +178,7 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
     .home-content {
         flex-direction: column;
@@ -188,7 +188,7 @@ section {
 
 .projects {
     background-color: var(--bg-color);
-    padding: 20px 0; /* Adjust as needed */
+    padding: 20px 0; 
 }
 
 .projects-container {
@@ -321,7 +321,7 @@ body {
 }
 
 .resume .position-relative {
-    max-width: 1000px; /* Adjust width as necessary */
+    max-width: 1000px; 
     padding-top: 70px;
     padding-bottom: 70px;
     padding-left: 180px;
@@ -334,13 +334,13 @@ body {
 .resume h1 {
     font-size: 2.5rem;
     margin-top: 20px;
-    color: #000; /* Text color */
+    color: #000;
 }
 
 .resume p {
     font-size: 1.2rem;
     margin-top: 10px;
-    color: #666; /* Text color */
+    color: #666; 
 }
 
 .resume .btn {
@@ -372,7 +372,7 @@ body {
     text-decoration: none;
 }
 
-/* Adjustments for smaller screens */
+
 @media screen and (max-width: 767px) {
     .resume {
         padding-left: 10px;

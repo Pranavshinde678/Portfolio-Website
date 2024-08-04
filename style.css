@@ -125,17 +125,19 @@ p {
     color: #666;
 }
 
+/* General section styling */
 section {
-    min-height: 100vh;
-    padding: 0 10%;
+    padding: 20px 10%; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 2rem; /* Consistent padding */
+    margin-bottom: rem
 }
 
+/* Specific sections */
 .home {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    padding-bottom: -110px;
-    text-align: left;
 }
 
 .home-content {
@@ -191,9 +193,7 @@ section {
 
 .projects {
     background-color: var(--bg-color);
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 460px;
+    padding: 20px 0; /* Adjust as needed */
 }
 
 .projects-container {
@@ -231,10 +231,9 @@ section {
 
 .skills {
     max-width: 188.75rem;
-    margin: auto;
+    margin: 0 auto;
+    padding: 40px 0; /* Adjust as needed */
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: -30px;
 }
 
 .skills-wrapper {
@@ -267,10 +266,8 @@ section {
 }
 
 .achievements {
+    padding: 20px 0; /* Adjust as needed */
     text-align: center;
-    padding: 20px 0;
-    margin-top: -160px;
-    
 }
 
 .achievements h2 {
@@ -451,9 +448,47 @@ html, body {
 
 nav, footer {
     width: 100%;
-    box-sizing: border-box; /* Ensures padding is included in the width */
+    box-sizing: border-box; 
 }
 
 *, *::before, *::after {
     box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .intro-text h1 {
+        font-size: 1.5rem; 
+    }
+
+    .intro-text h2 {
+        font-size: 1.2rem; 
+    }
+
+    .intro-text p {
+        font-size: 0.9rem; 
+        margin: 0.5rem 0; 
+    }
+
+    .intro-image img {
+        max-width: 80%; 
+    }
+}
+
+
+.intro-image img {
+    width: 100%;
+    max-width: 500px; 
+    height: auto; 
+    margin-top: 1rem; 
+}
+
+@media only screen and (max-width: 600px) {
+    .achievements {
+        margin-top: -2rem
+    }
+}
+
+html {
+    scroll-behavior: smooth;
 }

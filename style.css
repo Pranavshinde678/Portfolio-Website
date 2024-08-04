@@ -448,51 +448,51 @@ html, body {
 
 nav, footer {
     width: 100%;
-    box-sizing: border-box; 
+    box-sizing: border-box; /* Ensures padding is included in the width */
 }
 
 *, *::before, *::after {
     box-sizing: border-box;
 }
-
+.projects p{
+    text-align: justify;
+}   
 
 @media only screen and (max-width: 600px) {
     .intro-text h1 {
-        font-size: 1.5rem; 
+        font-size: 1.5rem; /* Adjust for smaller screens */
+        
     }
 
     .intro-text h2 {
-        font-size: 1.2rem; 
+        font-size: 1.2rem; /* Adjust for smaller screens */
     }
 
     .intro-text p {
-        font-size: 0.9rem; 
-        margin: 0.5rem 0; 
+        font-size: 0.9rem; /* Adjust for smaller screens */
+        margin: 0.5rem 0; /* Adjust spacing for smaller screens */
         text-align: justify;
     }
 
     .intro-image img {
-        max-width: 80%; 
+        max-width: 80%; /* Adjust image size for mobile */
     }
     .projects p{
         text-align: justify;
     }
 }
 
-.projects p{
-        text-align: justify;
-}
 
 .intro-image img {
-    width: 100%;
-    max-width: 500px; 
-    height: auto; 
-    margin-top: 1rem; 
+    width: 100%; /* Make image responsive */
+    max-width: 500px; /* Limit maximum width to 200px (adjust as needed) */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 1rem; /* Spacing between text and image */
 }
 
 @media only screen and (max-width: 600px) {
     .achievements {
-        margin-top: -2rem
+        margin-top: -2rem /* Increase the top margin to create more space */
     }
 }
 
@@ -510,3 +510,14 @@ html {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Define the default button styles */
+.btn-primary {
+    background-color: #007bff; /* Default button color */
+    border-color: #007bff; /* Default button border color */
+}
+
+/* Define the hover styles for the button */
+.btn-primary:hover {
+    background-color: #0056b3; /* Color on hover */
+    border-color: #004085; /* Border color on hover */
+}

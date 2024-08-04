@@ -12,7 +12,6 @@ This portfolio website was built using the following technologies:
 
 - **HTML**: For structuring the content.
 - **CSS**: For styling and layout.
-- **JavaScript**: For interactive features.
 
 The website is deployed on [Netlify](https://your-netlify-url.netlify.app), providing seamless and efficient hosting.
 

@@ -521,3 +521,8 @@ html {
     background-color: #0056b3; /* Color on hover */
     border-color: #004085; /* Border color on hover */
 }
+
+
+.social-links a:hover {
+    color: rgb(173, 156, 132); /* Color on hover */
+}

@@ -489,6 +489,28 @@ nav, footer {
     .achievements {
         margin-top: -2rem 
     }
+
+    .social-links {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 10px; 
+    }
+
+    .social-links a {
+        font-size: 15px; 
+        padding: 12px 20px; 
+    }
+    h4 {
+        font-size: 1 rem; 
+        margin: -130px auto;
+        justify-content: center; 
+        align-items: center;
+        text-align:center;
+    }
+
+    .center-container {
+        padding: 10px; 
+    }
 }
 
 html {
@@ -526,6 +548,14 @@ html {
     border-color: #004085;
 }
 
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; 
+    margin: 20px 0;
+}
+
 
 .social-links a:hover {
     color: rgb(173, 156, 132); 
@@ -560,4 +590,10 @@ input[type="email"] {
 
 textarea {
     font-family: 'Roboto', sans-serif;
+}
+
+.h4{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }

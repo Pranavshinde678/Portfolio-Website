@@ -146,7 +146,7 @@ section {
 .intro-text {
     flex: 1;
     min-width: 300px;
-  
+   
 }
 
 .intro-text h1 {
@@ -164,7 +164,7 @@ section {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 20px;
-     text-align: justify;
+    text-align: justify;
 }
 
 .intro-image {
@@ -531,13 +531,31 @@ html {
 .skill-container{
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     cursor: pointer;
+    
+ 
 }
 
 .skill-container:hover{
     transform: scale(1.05);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
+.skill-text {
+    visibility: hidden; 
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff; 
+    padding: 10px;
+    border-radius: 5px; 
+    white-space: nowrap; 
+}
 
+
+.skill-container:hover .skill-text {
+    visibility: visible; 
+}
 
 .btn-primary {
     background-color: #007bff; 

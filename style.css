@@ -617,3 +617,44 @@ textarea {
     text-align: center;
     justify-content: center;
 }
+
+
+.h4 {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.h4{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.text-container {
+    position: relative;
+    height: 3.7em; 
+    overflow: hidden;
+
+}
+
+h2.animated-text {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 15rem;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    padding-right: 0.2em; /* Space between text and cursor */
+    border-right: 0.15em solid rgb(0, 0, 0); /* Cursor effect */
+}
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+h2.animated-text {
+    animation: typewriter 4s steps(40, end) infinite;
+        border-right: 0.15em solid rgb(0, 0, 0); 
+}

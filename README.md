@@ -14,7 +14,7 @@ This portfolio website was built using the following technologies:
 - **CSS**: For styling and layout.
 - **JAVASCRIPT**: For designing specific tasks.
   
-The website is deployed on [Netlify](https://your-netlify-url.netlify.app), providing seamless and efficient hosting.
+The website is deployed on [Netlify](https://pranavshinde.netlify.app/), providing seamless and efficient hosting.
 
 ## 🤝 Connect With Me
 

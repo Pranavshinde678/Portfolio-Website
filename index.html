@@ -7,7 +7,19 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <title>Pranav Shinde Portfolio</title>
     <link rel="icon" href="/images/logo.png" type="image/png">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+      once: true, // Ensures animations happen only once
+      duration: 1000, // Adjust animation speed
+    });
+  });
+</script>
+
 </head>
+
 <body>
     <header>
     <nav>
@@ -42,11 +54,20 @@
             </p>
         </div>
         <div class="intro-image">
+          
             <img src="blazer_pic_1.jpg" alt="Pranav Shinde" style="max-width: 480px;">
-        </div>
+          <lottie-player 
+    src="https://assets9.lottiefiles.com/packages/lf20_jcikwtux.json"
+    background="transparent"  
+    speed="1"  
+    style="width: 320px; height: 320px;"  
+    loop  
+    autoplay>
+  </lottie-player>
+          </div>
     </div>
 </section>
-<section class="skills" id="skills">
+<section class="skills" id="skills" data-aos="fade-up">
     <h2 class="skill-header">Skills</h2>
 
     <div class="skills-wrapper">
@@ -154,7 +175,7 @@
         />
         <h3 class="project-title">Cyber Security Assessment Application</h3>
         <p class="project-details">
-          During my internship at Vakrangee Limited, I developed a Cyber Security Assessment App using HTML, CSS, JavaScript, and Firebase. The app features scenario-based questions and includes an anti-cheat mechanism to ensure test integrity. Users can review their answers immediately after submission, and results, including scores, remarks, and percentages, are stored in Firebase for admin access.
+          During my internship at Vakrangee Limited, I developed a Cyber Security Assessment App using HTML, CSS, JavaScript and Firebase. The app features 20 scenario-based questions, each worth one mark, and allows users to review their answers immediately after submission. Results, including scores ,remarks and percentages, are stored in Firebase for admin access.
         </p>
         <a href="https://vkcybersecurityassessment.netlify.app/" target="_blank" class="project-link">Check it Out</a>
       </div>
@@ -338,7 +359,7 @@
                                           
     
     </div>
-    
+    </section>
     <section class="resume">
       <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
 
@@ -365,7 +386,6 @@
       <label for="message">Message:</label>
       <textarea id="message" name="message" placeholder="Enter your message" rows="3" required></textarea>
       <br>
-        <div class="g-recaptcha" data-sitekey="6Ld5_dUqAAAAAIExNVLpRSQy8mL1ir5tXaFtr_6A"></div>
       <button type="submit">Send email</button>
   </form>
     <h4>Let's unite our ideas and craft something innovative together</h4>
@@ -391,7 +411,6 @@
 
 </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script src="index.js"></script>
 </body>
 

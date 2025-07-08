@@ -7,16 +7,16 @@ nav {
     align-items: center;
     justify-content: space-between;
     font-family: 'Varela Round', sans-serif;
-    padding: 16px 40px; /* More breathing space */
-    margin: 0 0 80px;   /* Removed negative margins */
-    flex-wrap: wrap;    /* Helps with small screen wrapping */
+    padding: 16px 40px; 
+    margin: 0 0 80px;   
+    flex-wrap: wrap;    
 }
 .home,
 .projects,
 .skills,
 .achievements,
 .resume {
-  margin: 60px 0; /* Adds space above and below each section */
+  margin: 60px 0; 
 }
 
 
@@ -323,11 +323,11 @@ section:nth-of-type(odd) {
 
 .project-link.btn {
   display: inline-block;
-  width: auto;           /* Changed from 100% */
+  width: auto;         
   padding: 10px 20px;
   font-size: 0.9rem;
   margin-top: auto;
-  align-self: center;     /* Center align inside the card */
+  align-self: center;     
   background-color: #007bff;
   color: #fff;
   text-decoration: none;
@@ -380,7 +380,7 @@ section:nth-of-type(odd) {
 
 .achievements {
     background-color: #f9f9f9;
-  margin: 10px 0 40px;  /* 10px top margin instead of 40px */
+  margin: 10px 0 40px;  
   padding: 40px 0;
 }
 
@@ -401,8 +401,8 @@ section:nth-of-type(odd) {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Ensures inner content is centered */
-  text-align: center;  /* Ensures text inside is centered */
+  align-items: center; 
+  text-align: center; 
 }
 
 .achievement-details {
@@ -418,7 +418,7 @@ section:nth-of-type(odd) {
 }
 
 .achievement-title1 {
-  font-size: 1rem;  /* Smaller title */
+  font-size: 1rem;  
   margin-bottom: 0.3rem;
   color: #333;
 }

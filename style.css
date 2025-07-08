@@ -1,34 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
-
 
 nav {
     background-color: black;
     color: aliceblue;
     display: flex;
     align-items: center;
-    font-family: 'Varela Round', sans-serif;
     justify-content: space-between;
-    padding: 12px 20px;
-    margin: -8px -1px 100px;
+    font-family: 'Varela Round', sans-serif;
+    padding: 16px 40px; /* More breathing space */
+    margin: 0 0 80px;   /* Removed negative margins */
+    flex-wrap: wrap;    /* Helps with small screen wrapping */
 }
+.home,
+.projects,
+.skills,
+.achievements,
+.resume {
+  margin: 60px 0; /* Adds space above and below each section */
+}
+
 
 nav h1 {
     font-size: 1.6rem;
 }
 
 body {
+    background: linear-gradient(to right, #f9f9f9, #ecf2f8);
+    font-family: 'Ubuntu', sans-serif;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: aliceblue;
-    font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
-    color: #333;
-    max-width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: background 0.4s ease;
 }
+
 
 ul {
     display: flex;
@@ -120,28 +127,85 @@ p {
     color: #666;
 }
 
-
 section {
-    padding: 20px 10%; 
-    margin: 0 auto;
-    padding: 2rem; 
-    margin-bottom: rem
+  background: #fff;
+  border-radius: 12px;
+  padding: 60px 10%;
+  margin: 40px 0;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
 }
+
+
+a, button, .project-card, .achievement-card, .btn-primary {
+  transition: all 0.3s ease-in-out;
+}
+
+
+.project-card:hover,
+.achievement-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.2);
+}
+
+
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(circle, #e1efff 0%, #ffffff 100%);
+  z-index: -1;
+  animation: backgroundAnimation 20s ease-in-out infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+section:nth-of-type(even) {
+  background-color: #f0f4f8; /* soft blue/gray */
+}
+
+section:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+
 
 
 .home {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 100%;
+    padding: 0; /* Remove side padding */
+    margin: 0;
+    background-color: #ffffff; /* Ensure white background */
 }
 
 .home-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
 }
+
 
 .intro-text {
     flex: 1;
@@ -189,51 +253,90 @@ section {
 }
 
 .projects {
-    background-color: var(--bg-color);
-    padding: 20px 0; 
+  padding: 40px 10%;
+  margin: 20px 0 10px; /* 10px bottom margin instead of 40px */
 }
 
+.projects-title {
+  font-size: 2.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  margin-bottom: 0.4rem;
+  width: 100%;
+}
 .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.project-container {
-    text-align: center;
-    width: 100%;
-    padding: 1rem;
-    max-width: 400px;
-}
-
-.project-pic {
-    width: 100%;
-    height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
 }
 
 .project-card {
-    background-color: #ffffff;
-    border-radius: 11px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px;
-}
-
-.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-
-.projects h2 {
-    font-size: 2.5rem;
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
-    margin-bottom: 1rem;
+.project-pic {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
 }
+
+.project-title {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+}
+
+.project-details {
+  font-size: 0.95rem;
+  text-align: justify;
+  flex-grow: 1;
+  margin-bottom: 15px;
+  min-height: 130px; /* Optional - helps align short descriptions */
+}
+
+.project-link {
+  margin-top: auto;
+  text-align: center;
+}
+
+.project-link.btn {
+  display: inline-block;
+  width: 100%;
+}
+
+
+.project-link.btn {
+  display: inline-block;
+  width: auto;           /* Changed from 100% */
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  margin-top: auto;
+  align-self: center;     /* Center align inside the card */
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-link.btn:hover {
+  background-color: #0056b3;
+}
+
 
 .skills {
     max-width: 188.75rem;
@@ -272,8 +375,8 @@ section {
 }
 
 .achievements {
-    padding: 20px 0; 
-    text-align: center;
+  margin: 10px 0 40px;  /* 10px top margin instead of 40px */
+  padding: 40px 0;
 }
 
 .achievements h2 {
@@ -287,11 +390,35 @@ section {
 }
 
 .achievement-card {
-    margin: 10px;
-    max-width: 300px;
-    text-align: center;
-    background-color: #ffffff;
+  max-width: 300px;
+  width: 100%;
+  margin: 10px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensures inner content is centered */
+  text-align: center;  /* Ensures text inside is centered */
 }
+
+.achievement-details {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.achievements-title {
+  font-size: 2.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.achievement-title1 {
+  font-size: 1rem;  /* Smaller title */
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+
 
 .achievement-card img {
     max-width: 100%;
@@ -300,14 +427,9 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.achievement-details {
-    padding: 10px;
-}
 
-.achievement-title {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
+
+
 
 body {
     margin: 0;
@@ -321,67 +443,64 @@ body {
 }
 
 .resume {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 60px auto;
-    padding: 60px 0;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  font-family: 'Ubuntu', sans-serif;
+  width: 100%;
+  margin: 20px 0 40px;
 }
 
 .resume .position-relative {
-    max-width: 1000px; 
-    padding-top: 70px;
-    padding-bottom: 70px;
-    padding-left: 180px;
-    padding-right: 180px;
-    background-color: #f8f9fa;
-    border: 2px solid #ddd;
-    border-radius: 20px;
+  max-width: 1100px;
+  width: 100%;
+  padding: 60px 40px;
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.resume .position-relative:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
 }
 
 .resume h1 {
-    font-size: 2.5rem;
-    margin-top: 20px;
-    color: #000;
+  font-size: 2.8rem;
+  color: #1d1d1d;
+  margin-bottom: 20px;
 }
 
 .resume p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    color: #666; 
-}
-
-.resume .btn {
-    display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
 }
 
 .resume .btn-primary {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.resume .btn-primary:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
 }
 
 .resume .btn-primary a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
-.resume .btn-primary a:hover {
-    color: #fff;
-    text-decoration: none;
-}
 
 
 @media screen and (max-width: 767px) {
@@ -418,9 +537,7 @@ body {
         flex-direction: column;
         align-items: center;
     }
-    .achievements {
-        margin-top: -80px;
-    }
+   
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -698,6 +815,18 @@ p {
   animation: fadeTextUp 1s ease forwards;
   animation-delay: 0.3s;
 }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @keyframes fadeTextUp {
   to {
     opacity: 1;

@@ -712,19 +712,21 @@
         background-color: #0056b3; 
         border-color: #004085;
     }
+.social-links {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    gap: 15px;
+    align-items: center;
+}
 
-    .social-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px; 
-        margin: 20px 0;
-    }
+  .social-links img {
+  transition: transform 0.2s ease;
+}
 
+.social-links img:hover {
+  transform: scale(1.2);
+}
 
-    .social-links a:hover {
-        color: rgb(173, 156, 132); 
-    }
 
     form {
         background: #000000;

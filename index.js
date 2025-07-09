@@ -30,24 +30,15 @@ document.addEventListener("DOMContentLoaded", function() {
   typePhrase();
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target); // remove if animation only once
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-      }
-    );
+  setTimeout(() => {
+    document.body.classList.add("loaded");
 
-    document.querySelectorAll(".fade-in").forEach(el => {
-      observer.observe(el);
-    });
-  });
+    const preloader = document.getElementById("preloader");
+    preloader.style.opacity = "0";
 
+    setTimeout(() => {
+      preloader.style.display = "none";
+    }, 800);
+  }, 2000); // Matches bounce animation duration
+});

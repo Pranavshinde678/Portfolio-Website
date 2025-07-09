@@ -42,3 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 800);
   }, 2000); // Matches bounce animation duration
 });
+
+
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }

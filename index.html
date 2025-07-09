@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <title>Pranav Shinde Portfolio</title>
     <link rel="icon" href="/images/logo.png" type="image/png">
@@ -23,52 +24,72 @@
 
 <body>
     <header>
-    <nav>
-        <h1>Pranav Shinde</h1>
-        <ul>
-            
-            <li><a href="#home-section">About</a></li>
-            <li><a href="#skills">Skills</a></li> 
-            <li ><a href="#education">Education</li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="mailto:pranavvvvshinde@gmail.com">Suggestions</a></li>
+<nav>
+  <h1>Pranav Shinde</h1>
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+  <ul class="nav-links">
+    <li><a href="#home-section">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+  </ul>
+</nav>
 
-        </ul>
-    </nav>
+
 </header>
 <main>
-  <section class="home">
-    <div class="home-content" id="home-section">
-        <div class="intro-text">
-            <h1>Hi there, I'm Pranav Shinde</h1>
-            <div class="text-container">
-                <h2 id="animated-text"></h2>
-            </div>
-            <p>
-                Greetings! I am a final-year Computer Science Engineering student at Vellore Institute of Technology, Chennai, specializing in AI and Robotics. 
-                With a firm grasp of Java, Data Structures and Algorithms, and Web Development, I approach every project with a professional mindset, a knack for problem-solving, and a collaborative spirit. 
-                
-                Within this portfolio lies a carefully curated selection of my work, showcasing the seamless fusion of technology and design. 
-                
-                As a relentless pursuer of excellence, I invite you to explore the intricacies of my coding landscape. Beyond the lines of code, this platform reflects my journey in refining my skills through both individual problem-solving and team collaborations. 
-                I am currently seeking internships and entry-level positions where I can contribute, learn, and grow. Welcome to a space where challenges are embraced as opportunities for innovation and growth. Let's connect and explore the limitless possibilities within the realm of technology and innovation!
-            </p>
-        </div>
-        <div class="intro-image">
-          
-            <img src="blazer_pic_1.jpg" alt="Pranav Shinde" style="max-width: 480px;">
-          <lottie-player 
-    src="https://assets9.lottiefiles.com/packages/lf20_jcikwtux.json"
-    background="transparent"  
-    speed="1"  
-    style="width: 320px; height: 320px;"  
-    loop  
-    autoplay>
-  </lottie-player>
-          </div>
+<section class="home">
+  <div class="home-content" id="home-section">
+    <div class="intro-text">
+      <h1>Hi All, I'm Pranav <span class="wave">👋</span></h1>
+  <p class="short-intro">
+ 💻 I am a Final-year Computer Science Engineering student at VIT Chennai with a strong foundation in Data Structures & Algorithms and practical experience in Software Development. Open to challenging opportunities in dynamic environments that value innovation, collaboration, and growth.
+</p>
+
+
+      <!-- Social icons -->
+      <div class="social-links-1">
+ <a href="https://www.linkedin.com/in/pranav-shinde-b24904267/" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="30" height="30">
+  </a>
+  <a href="https://github.com/Pranavshinde678" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" width="30" height="30" />
+  </a>
+  <a href="https://www.naukri.com/code360/profile/pranav_069" target="_blank">
+    <img src="images/codingninjas.png" alt="Coding Ninjas" width="30" height="30">
+  </a>
+  <a href="https://leetcode.com/u/pranav_010/" target="_blank">
+    <img src="images/leetcode.png" alt="LeetCode" width="30" height="30">
+  </a>
+  <a href="https://www.geeksforgeeks.org/user/pranavvvvshinde/" target="_blank">
+    <img src="images/geeksforgeeks.png" alt="GeeksforGeeks" width="30" height="30">
+  </a>
+  <a href="https://www.facebook.com/pranav.shinde.161214" target="_blank">
+    <img src="images/facebook.png" alt="Facebook" width="30" height="30">
+  </a>
+  <a href="https://www.instagram.com/pranavvshinde" target="_blank">
+    <img src="images/instagram.png" alt="Instagram" width="30" height="30">
+  </a>
+<a href="mailto:pranavvvvshinde@gmail.com">
+  <img src="images/email.png" alt="Email" width="30" height="30">
+</a>
+
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="cta-buttons">
+        <a href="#contact" class="btn-primary">Contact Me</a>
+        <a href="Pranav Shinde Resume.pdf" class="btn-secondary" download>Download Resume</a>
+      </div>
     </div>
+
+    <div class="intro-image">
+      <img src="blazer_pic_1.jpg" alt="Pranav Shinde" style="max-width: 480px;">
+    </div>
+  </div>
 </section>
+
 
 
 <section class="skills" id="skills" data-aos="fade-up">
@@ -365,7 +386,7 @@
     
     </div>
     </section>
-    <section class="resume" data-aos="fade-up">
+    <!-- <section class="resume" data-aos="fade-up">
       <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
 
           <svg class="bi mb-3" width="68" height="78">
@@ -380,10 +401,10 @@
                   Resume</a>
           </button>
       </div>
-  </section>
+  </section> -->
   
   
-  <footer>
+  <footer id="contact">
     <form action="https://formspree.io/f/xanwovzb" method="post">
       <h3>Connect</h3>
       <label for="email">Email:</label>
@@ -417,6 +438,10 @@
   <a href="https://www.instagram.com/pranavvshinde" target="_blank">
     <img src="images/instagram.png" alt="Instagram" width="30" height="30">
   </a>
+<a href="mailto:pranavvvvshinde@gmail.com">
+  <img src="images/email.png" alt="Email" width="30" height="30">
+</a>
+
 </div>
   
 

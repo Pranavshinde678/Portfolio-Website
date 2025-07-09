@@ -369,13 +369,6 @@ ul li a:hover::after {
 }
 
 
-
-
-
-
-
-
-
     .home {
     width: 100%;
     padding: 0;
@@ -442,6 +435,31 @@ ul li a:hover::after {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   animation: floatUpDown 4s ease-in-out infinite;
 }
+
+
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh; /* Makes the section take almost full screen height */
+    padding: 40px 20px;
+  }
+
+  .intro-text {
+    padding-right: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+}
+
+
 
 @keyframes floatUpDown {
   0%, 100% {
@@ -1062,16 +1080,21 @@ ul li a:hover::after {
             margin-top: -2rem 
         }
 
-        .social-links {
-            flex-direction: column; 
-            align-items: center; 
-            gap: 10px; 
-        }
+  @media (max-width: 768px) {
+  .social-links {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+  }
 
-        .social-links a {
-            font-size: 15px; 
-            padding: 12px 20px; 
-        }
+  .social-links a img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
         h4 {
             font-size: 1 rem; 
             margin: -130px auto;

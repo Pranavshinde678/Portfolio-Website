@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   const textElement = document.getElementById('animated-text');
-  const phrases = [ "Student","Web Developer","Football Enthusiast"];
+  const phrases = [ "Problem Solver","Web Developer","Football Enthusiast"];
   let phraseIndex = 0;
   let letterIndex = 0;
   
@@ -29,23 +29,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
   typePhrase();
 });
-
 document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(() => {
-    document.body.classList.add("loaded");
+  const preloader = document.getElementById("preloader");
 
-    const preloader = document.getElementById("preloader");
-    preloader.style.opacity = "0";
-
+  // Check if the user has already visited index.html in this session
+  if (!sessionStorage.getItem("preloaderShown")) {
+    // Show preloader
     setTimeout(() => {
-      preloader.style.display = "none";
-    }, 800);
-  }, 2000); // Matches bounce animation duration
+      document.body.classList.add("loaded");
+      preloader.style.opacity = "0";
+
+      setTimeout(() => {
+        preloader.style.display = "none";
+      }, 800);
+    }, 2000); // Matches bounce animation duration
+
+    // Mark preloader as shown
+    sessionStorage.setItem("preloaderShown", "true");
+  } else {
+    // Skip preloader
+    document.body.classList.add("loaded");
+    preloader.style.display = "none";
+  }
 });
+
 
 
   function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('active');
   }
-

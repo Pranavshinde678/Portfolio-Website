@@ -4,7 +4,7 @@ Welcome to my portfolio! 🎨✨ Here, you'll find a curated selection of projec
 
 ## 🚀 About Me
 
-I am a final-year **Computer Science Engineering** student at Vellore Institute of Technology, Chennai, with a specialization in **AI** and **Robotics**. My passion for technology is complemented by my proficiency in **Java**, **Data Structures and Algorithms**, and **Web Development**. I am committed to applying my skills to innovative projects that make a meaningful impact.
+I am a **Computer Science Engineering** Graduate from Vellore Institute of Technology, Chennai, with a specialization in **AI** and **Robotics**. My passion for technology is complemented by my proficiency in **Java**, **Data Structures and Algorithms**, and **Web Development**. I am committed to applying my skills to innovative projects that make a meaningful impact.
 
 ## 🌐 Technologies & Deployment
 
